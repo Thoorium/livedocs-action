@@ -16,3 +16,9 @@ fi
 echo "Application name is '${APPLICATION_NAME}'"
 
 dotnet /LiveDocs/LiveDocs.Generator.dll --LiveDocs:ApplicationName "${APPLICATION_NAME}" --LiveDocs:DocumentationFolder "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}"
+
+echo "Copying LiveDocs website files."
+
+cp -R "/LiveDocs/wwwroot/." "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/."
+
+echo "Done."
