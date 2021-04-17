@@ -23,6 +23,6 @@ cp -R "/LiveDocs/wwwroot/." "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/.
 
 echo "Updating application path."
 
-sed -i 's/base href="\/"/base href="\/${APPLICATION_NAME}"/g' "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html"
+sed -i "s/base href=\"\/\"/base href=\"\/"${APPLICATION_NAME}"\"/g" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html"
 
 echo "Done."
