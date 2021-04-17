@@ -14,7 +14,7 @@ inputs:
 #    description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'dockerfile'
 
 branding:
   icon: 'book-open'  
