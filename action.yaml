@@ -1,0 +1,21 @@
+# action.yml
+name: 'LiveDocs Generator'
+description: 'Convert your static documentation into a website'
+inputs:
+  documentation_folder:
+    description: 'Path to the folder containing your documentation'
+    required: true
+    default: 'docs'
+  application_name:
+    description: 'Name of your project / application'
+    required: false
+#outputs:
+#  time: # id of output
+#    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'book-open'  
+  color: 'blue'
