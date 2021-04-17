@@ -1,1 +1,1 @@
-{"Documents":[{"LexicalIndexes":[0,1,2,3,4],"Path":"index"}],"Lexical":["index","hello","world","livedoc","action"]}
+{"Documents":[{"LexicalIndexes":[0,1],"Path":"another-document"},{"LexicalIndexes":[2,3],"Path":"subfolder/subfolder-file"},{"LexicalIndexes":[4,5,6,7,8],"Path":"index"}],"Lexical":["anoth","document","subfold","file","index","hello","world","livedoc","action"]}
