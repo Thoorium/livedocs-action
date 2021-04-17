@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  publish_documentation:
+    runs-on: ubuntu-latest
+    name: Publish the documentation files
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: LiveDocs generator
+        uses: ./ # Uses an action in the root directory
+        id: livedocs
+        with:
+          documentation_folder: 'tests/docs'

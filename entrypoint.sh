@@ -4,7 +4,7 @@ set -e
 echo "Starting the LiveDocs Generator action."
 
 if [ -n "$INPUT_DOCUMENTATION_FOLDER" ]; then
-  echo "Documentation folder is '$INPUT_DOCUMENTATION_FOLDER'."
+  echo "Documentation folder is '$GITHUB_WORKSPACE/$INPUT_DOCUMENTATION_FOLDER'."
 fi 
 
 IN="$GITHUB_REPOSITORY"
@@ -17,4 +17,4 @@ fi
 
 echo "Application name is '${APPLICATION_NAME}'"
 
-dotnet /LiveDocs/LiveDocs.Generator.dll --LiveDocs:ApplicationName "${APPLICATION_NAME}" --LiveDocs:DocumentationFolder "${INPUT_DOCUMENTATION_FOLDER}"
+dotnet /LiveDocs/LiveDocs.Generator.dll --LiveDocs:ApplicationName "${APPLICATION_NAME}" --LiveDocs:DocumentationFolder "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}"
