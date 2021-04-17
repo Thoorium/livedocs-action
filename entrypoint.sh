@@ -21,4 +21,8 @@ echo "Copying LiveDocs website files."
 
 cp -R "/LiveDocs/wwwroot/." "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/."
 
+echo "Updating application path."
+
+sed -i 's/base href="\/"/base href="\/${APPLICATION_NAME}"/g' index.html
+
 echo "Done."

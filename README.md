@@ -14,6 +14,8 @@ Name of your project / application. Default `"Your project's name"`.
 
 ## Example usage
 
+```yaml
 uses: thoorium/livedocs-action@v1
 with:
   documentation_folder: 'docs'
+```
