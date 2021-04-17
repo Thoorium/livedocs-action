@@ -5,25 +5,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Loading</title>
-    <base href="/livedocs-action/" />
-    <link rel="stylesheet" href="_content/LiveDocs.Shared/css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="_content/LiveDocs.Shared/css/bootstrap/docs.css" />
-    <link href="_content/LiveDocs.Shared/css/shared.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="manifest.json" rel="manifest" />
-    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <base href="livedocs-action//" />
+    <link rel="stylesheet" href="livedocs-action/_content/LiveDocs.Shared/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="livedocs-action/_content/LiveDocs.Shared/css/bootstrap/docs.css" />
+    <link href="livedocs-action/_content/LiveDocs.Shared/css/shared.css" rel="stylesheet" />
+    <link href="livedocs-action/css/app.css" rel="stylesheet" />
+    <link href="livedocs-action/manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="livedocs-action/icon-512.png" />
 </head>
 
 <body>
     <app>
         <div class="loading-document-wrapper mx-auto mt-4">
             <div class="loading-document mx-auto">
-                <img src="_content/LiveDocs.Shared/img/content.svg" onerror="this.onerror=null; this.src='_content/LiveDocs.Shared/img/content.png'">
+                <img src="livedocs-action/_content/LiveDocs.Shared/img/content.svg" onerror="this.onerror=null; this.src='_content/LiveDocs.Shared/img/content.png'">
             </div>
         </div>
     </app>
 
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="livedocs-action/_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
     <script>
         window.scrollToElementId = (elementId) => {
@@ -45,6 +45,6 @@
             document.title = title;
         };
     </script>
-    <script src="/_content/LiveDocs.Shared/js/drawio/embed.js"></script>
+    <script src="livedocs-action//_content/LiveDocs.Shared/js/drawio/embed.js"></script>
 </body>
 </html>
