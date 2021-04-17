@@ -25,4 +25,8 @@ echo "Updating application path."
 
 sed -i "s/base href=\"\/\"/base href=\"\/"${APPLICATION_NAME}"\/\"/g" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html"
 
+echo "Disabling jekyll."
+
+touch "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/.nojekyll"
+
 echo "Done."
