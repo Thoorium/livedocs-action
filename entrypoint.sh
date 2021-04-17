@@ -25,6 +25,10 @@ echo "Updating application path."
 
 sed -i "s/base href=\"\/\"/base href=\"\/"${APPLICATION_NAME}"\/\"/g" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html"
 
+echo "Github pages: Temporary 404 fix."
+
+cp "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/404.html"
+
 echo "Disabling jekyll."
 
 touch "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/.nojekyll"
