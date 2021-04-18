@@ -12,6 +12,18 @@ This action generates the necessary documents to publish your documentation with
 
 Name of your project / application. Default `"Your project's name"`.
 
+### `theme_css`
+
+Comma (,) separated list of css files to add to the website.
+
+### `theme_js`
+
+Comma (,) separated list of javascript files to add to the website.
+
+### `theme_resources`
+
+Comma (,) separated list of resources files to add to the website.
+
 ## Example usage
 
 ```yaml

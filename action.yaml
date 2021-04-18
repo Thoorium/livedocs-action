@@ -9,6 +9,15 @@ inputs:
   application_name:
     description: 'Name of your project / application'
     required: false
+  theme_css:
+    description: 'Comma (,) separated list of css files to add to the website.'
+    required: false
+  theme_js:
+    description: 'Comma (,) separated list of javascript files to add to the website.'
+    required: false
+  theme_resources:
+    description: 'Comma (,) separated list of resources files to add to the website.'
+    required: false
 #outputs:
 #  time: # id of output
 #    description: 'The time we greeted you'
