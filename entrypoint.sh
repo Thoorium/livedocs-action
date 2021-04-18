@@ -15,11 +15,19 @@ fi
 
 echo "Application name is '${APPLICATION_NAME}'"
 
+LIVEDOCS_CONFIG_FILENAME="livedocs.json"
+LIVEDOCS_ROOT="/LiveDocs"
+
+if [ -f "$GITHUB_WORKSPACE/$LIVEDOCS_CONFIG_FILENAME" ]; then
+    echo "Using LiveDocs configuration file '$GITHUB_WORKSPACE/$LIVEDOCS_CONFIG_FILENAME'"
+    cp "$GITHUB_WORKSPACE/$LIVEDOCS_CONFIG_FILENAME" "${LIVEDOCS_ROOT}/$LIVEDOCS_CONFIG_FILENAME"
+fi
+
 dotnet /LiveDocs/LiveDocs.Generator.dll --LiveDocs:ApplicationName "${APPLICATION_NAME}" --LiveDocs:DocumentationFolder "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}"
 
 echo "Copying LiveDocs website files."
 
-cp -R "/LiveDocs/wwwroot/." "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/."
+cp -R "${LIVEDOCS_ROOT}/wwwroot/." "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/."
 
 echo "Updating application path."
 

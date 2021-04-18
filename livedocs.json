@@ -1,0 +1,26 @@
+{
+    "LiveDocs": {
+      "ApplicationName": "LiveDocs",
+      "DocumentationFolder": "/docs",
+      "DefaultDocuments": [
+        "readme",
+        "index"
+      ],
+      "LandingPageDocument": "landing",
+      "Documents": {
+        "ShowDownloadOriginal": true,
+        "Drawio": {
+          "Enabled": false
+        }
+      },
+      "Navigation": {
+        "Header": [
+          {
+            "Url": "https://github.com/Thoorium/livedocs-action",
+            "Text": "Github repository",
+            "NewTab": true
+          }
+        ]
+      }
+    }
+  }
