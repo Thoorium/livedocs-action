@@ -29,7 +29,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-\/v3wksWjesiHQkFY1SXsUrLshBF4ucgDK3nGbZS8JXE=",
+      "hash": "sha256-oIfjXP4BjYwZHLe6FeeV5Jds58vGdoke7nAfqwT1EKA=",
       "url": "index.html"
     },
     {
@@ -65,12 +65,16 @@
       "url": "_framework\/dotnet.5.0.2.js"
     },
     {
-      "hash": "sha256-U5ow2bCcvlb1Cv2FDQCTP5If5h\/ZTt1Y3TcdoQq9xJM=",
+      "hash": "sha256-bnNf5JsU4KQ2YcqSTDXxBOAniZU5Zs9jk7MZyGd+Qj8=",
       "url": "_content\/LiveDocs.Shared\/css\/bootstrap\/bootstrap.css"
     },
     {
       "hash": "sha256-0lS26Jnk44zm8jeCs+kutUt9wdfwM5ALQDJDLbrxX54=",
       "url": "_content\/LiveDocs.Shared\/css\/bootstrap\/bootstrap.css.map"
+    },
+    {
+      "hash": "sha256-xrvb6Er+0YUhyFRNN8z73fWPl3achk+ZBpP3Q0hqHzA=",
+      "url": "_content\/LiveDocs.Shared\/css\/bootstrap\/bootstrap.dark.css"
     },
     {
       "hash": "sha256-uaw8TgiRqqYO2M52x1eMJigow6KKj6t2Td8GvWpsV6g=",
@@ -221,7 +225,7 @@
       "url": "_framework\/Thoorium.WordLib.dll"
     },
     {
-      "hash": "sha256-Pe63NOwWQ6B1\/Tv2AM+U0OdHot+lZmmBmK\/bAxDn7q0=",
+      "hash": "sha256-qQ8XSyxcSDfyYpEEglqtfYBLSHR\/EojY7gSWXdUdtO0=",
       "url": "_framework\/LiveDocs.Shared.dll"
     },
     {
@@ -345,7 +349,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-YKAc7BUZNYzNTvo4WPFgKKXtbO74MWB7Z4K3YNTHfrY=",
+      "hash": "sha256-bWxNhVQkovbWM12mnLbiX8l7l1vMLrbYEhYdUA3CB4c=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -353,5 +357,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "OmJRDR4f"
+  "version": "D2+1cPPE"
 };
