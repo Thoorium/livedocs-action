@@ -40,7 +40,7 @@ if [ -n "$INPUT_THEME_CSS" ]; then
         echo "Writing theme css '${i}' to '${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html'."
         sed -i "/THEME_CSS/ a \ \ \ \ <link rel=\"stylesheet\" href=\"${i}\" />" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html"
       else
-        echo "Could not find theme css file '${CSS_FULLPATH}'."
+        echo "::error::Could not find theme css file '${CSS_FULLPATH}'."
         exit 1
       fi
   done
@@ -56,7 +56,7 @@ if [ -n "$INPUT_THEME_JS" ]; then
         echo "Writing theme javascript '${i}' to '${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html'."
         sed -i "/THEME_JS/ a \ \ \ \ <script src=\"${i}\"><\/script>" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/index.html"
       else
-        echo "Could not find theme javascript file '${JS_FULLPATH}'."
+        echo "::error::Could not find theme javascript file '${JS_FULLPATH}'."
         exit 1
       fi
   done
@@ -70,7 +70,7 @@ if [ -n "$INPUT_THEME_RESOURCES" ]; then
         echo "Copying theme resource file '${RESOURCE_FULLPATH}' to '${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}'."
         cp "${RESOURCE_FULLPATH}" "${GITHUB_WORKSPACE}/${INPUT_DOCUMENTATION_FOLDER}/${i}"
       else
-        echo "Could not find resource file '${RESOURCE_FULLPATH}'."
+        echo "::error::Could not find resource file '${RESOURCE_FULLPATH}'."
         exit 1
       fi
   done
