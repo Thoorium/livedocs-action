@@ -14,7 +14,7 @@ jobs:
         id: livedocs
         with:
           documentation_folder: 'tests/docs'
-          theme_css: 'custom.css'
+          theme_css: 'custom.css,custom2.css'
           theme_js: 'custom.js'
           theme_resources: 'sample.txt'
       - name: Deploy
