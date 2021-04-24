@@ -1,0 +1,26 @@
+on: [push]
+
+jobs:
+  publish_documentation:
+    runs-on: ubuntu-latest
+    name: Publish the documentation files
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: LiveDocs generator
+        uses: ./ # Uses an action in the root directory
+        id: livedocs
+        with:
+          documentation_folder: 'tests/docs'
+          theme_css: 'custom.css,custom2.css'
+          theme_js: 'custom.js'
+          theme_resources: 'sample.txt'
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: tests/docs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
